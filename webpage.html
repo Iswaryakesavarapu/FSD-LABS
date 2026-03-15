@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voter Eligibility</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Voter Details</h2>
+
+<script>
+    // Taking input using prompt dialog box
+    var name = prompt("Enter your name:");
+    var age = prompt("Enter your age:");
+
+    
+    age = parseInt(age);
+
+    
+    var eligibility;
+    if (age >= 18) {
+        eligibility = "Eligible to Vote";
+    } else {
+        eligibility = "Not Eligible to Vote";
+    }
+
+
+    document.write("<table>");
+    document.write("<tr><th>Name</th><th>Age</th><th>Voting Status</th></tr>");
+    document.write("<tr>");
+    document.write("<td>" + name + "</td>");
+    document.write("<td>" + age + "</td>");
+    document.write("<td>" + eligibility + "</td>");
+    document.write("</tr>");
+    document.write("</table>");
+</script>
+
+</body>
+</html>
