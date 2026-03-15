@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Larger Number</title>
+</head>
+
+<body>
+
+<script>
+
+let a = parseInt(prompt("Enter first integer"));
+let b = parseInt(prompt("Enter second integer"));
+let c = parseInt(prompt("Enter third integer"));
+
+if (a == b && b == c)
+{
+    alert("<html>EQUAL NUMBERS</html>");
+}
+else
+{
+    let largest = a;
+
+    if (b > largest)
+        largest = b;
+
+    if (c > largest)
+        largest = c;
+
+    alert("<html>" + largest + " LARGER NUMBER</html>");
+}
+
+</script>
+
+</body>
+</html>
