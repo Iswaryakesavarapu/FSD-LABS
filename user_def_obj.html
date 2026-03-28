@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Defined Object Example</title>
+</head>
+
+<body>
+
+<h2>User Defined Object using Properties, Methods, Accessors and Constructor</h2>
+
+<script>
+
+
+function Student(name, roll, marks){
+this.name = name;
+this.roll = roll;
+this.marks = marks;
+
+
+this.display = function(){
+return "Name : " + this.name +
+"<br>Roll No : " + this.roll +
+"<br>Marks : " + this.marks;
+}
+}
+
+
+let student = new Student("Aishu",4750,85);
+
+Object.defineProperty(student,"studentMarks",{
+get:function(){
+return this.marks;
+},
+set:function(value){
+this.marks = value;
+}
+});
+
+
+student.studentMarks = 90;
+
+
+document.write(student.display());
+
+</script>
+
+</body>
+</html>
