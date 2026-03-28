@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Window Object Example</title>
+
+<script>
+
+function showWindowMethods()
+{
+    let name = prompt("Enter your name");
+
+    alert("Welcome " + name);
+
+    let choice = confirm("Do you want to continue?");
+
+    if(choice)
+    {
+        alert("You pressed OK");
+    } 
+    else
+    {
+        alert("You pressed Cancel");
+    }
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>Window Object Properties and Methods</h2>
+
+<button onclick="showWindowMethods()">Click Here</button>
+
+</body>
+</html>
